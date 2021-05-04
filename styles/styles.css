@@ -1,0 +1,319 @@
+*{
+    margin:0;
+    padding:0;
+}
+#app{
+    display:none;
+}
+nav{
+    width:100%;
+    background-color:transparent;
+    height:34px;
+}
+#section-drag-window{
+    height:34px;
+    width:90%;
+    -webkit-app-region:drag;
+}
+body{
+    background-color:#17191C;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; 
+
+}
+html { border-radius: 60px; }
+
+#logo-app{
+    position:abslute;
+    margin-top:12px;
+}
+#message-section img{
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.fadeOut{
+    animation-iteration-count:1;
+    animation-name:fadeOut;
+    animation-timing-function:linear;
+    animation-duration:1s;
+}
+@keyframes fadeOut{
+ 0%{
+    opacity:1;
+ }100%{
+   opacity:1;
+ }
+}
+#message-section p{
+    position:absolute;
+    top:55%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+    font-family:"poppins-light";
+
+    font-weight:lighter;
+    font-size:23px;
+}
+#starter-btn{
+    position:absolute;
+    top:65%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:230px;
+    cursor:pointer;
+    height:50px;
+    color:white;
+    background-color:transparent;
+    border:1px solid white;
+    font-family:"poppins-light";
+    
+    font-weight:lighter;
+    font-size:17px;
+    transition:all 1s;
+}
+#starter-btn:hover{
+    background-color:#6c5ce7;
+    border:none;
+    box-shadow:0 1px 1px 1px #6c5ce7;
+
+}
+#section-btn-window{
+    display:none;
+}
+#section-btn-window #minimize{
+    position:absolute;
+    top:3%;
+    left:93%;
+    transform:translate(-50%,-50%);
+    cursor: pointer;
+    color:white;
+    height:34px;
+    width:60px;
+    cursor: pointer;
+    padding-top:12px;
+    background-color:transparent;
+    transition:all 0.5s;
+    font-size:12px;
+}
+#section-btn-window #minimize:hover{
+    color:rgba(255,255,255,.1);
+}
+
+#section-btn-window #maximize{
+    position:absolute;
+    top:3%;
+    left:97%;
+    transform:translate(-50%,-50%);
+    cursor: pointer;
+    color:white;
+    height:34px;
+    padding-top:22px;
+    width:60px;
+    font-size:12px;
+    transition:all 0.5s;
+}
+#section-btn-window #maximize:hover{
+    color:rgb(119, 0, 255);
+}
+@font-face {
+    font-family:"poppins-light";
+    src: url("../assets/fonts/poppins/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family:"poppins-Semi-Bold";
+    src: url("../assets/fonts/poppins/Poppins-SemiBold.ttf");
+}
+#content{
+    background-color:#1C1E21;
+    position:absolute;
+    height:100%;
+    width:50%;
+}
+#content-header{
+    color:white;
+    height:160px;
+}
+#content-header-tlt-1{
+  margin-left:22px;
+  padding-top:80px;
+  font-family:"poppins-Semi-Bold";
+
+}
+#content-header-tlt-2{
+    margin-left:22px;
+    padding-top:8px;
+    font-family:"poppins-light";
+    font-size:12px;
+    color:#6B6B6D;
+}
+#content-form{
+    height:280px;
+    margin-top:32px;
+}
+#content-form-2{
+    height:280px;
+    margin-top:12px;
+}
+#content-form-username{
+    border:none;
+    background-color:transparent;
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:4px;
+    height:40px;
+    position:absolute;
+    margin-left:22px;
+    padding-left:10px;
+    color:white;
+    width:260px;
+    font-family:"poppins-light";
+
+    
+}
+#content-form-username:focus,#content-form-email:focus,#content-form-pass:focus{
+    border:1px solid #5268F4;
+    outline: none !important;
+}
+#content-form-email{
+    border:none;
+    background-color:transparent;
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:4px;
+    height:40px;
+    position:absolute;
+    margin-left:22px;
+    padding-left:10px;
+    margin-top:60px;
+    color:white;
+    width:260px;
+    font-family:"poppins-light";
+    
+
+}
+#content-form-pass{
+    border:none;
+    background-color:transparent;
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:4px;
+    height:40px;
+    position:absolute;
+    margin-left:22px;
+    padding-left:10px;
+    margin-top:120px;
+    color:white;
+    width:260px;
+    font-family:"poppins-light";
+
+    
+}
+#term{
+    position:absolute;
+    color:white;
+    margin-left:25px;
+    top:64%;
+    font-family:"poppins-light";
+    font-size:12px;
+
+}
+#content-btn-submit{
+    position:absolute;
+    color:white;
+    margin-left:25px;
+    top:71%;
+    border:none;
+    background-color:#5268F4;
+    width:280px;
+    height:40px;
+    border-radius:5px;
+    outline:none;
+    cursor:pointer;
+    font-family:"poppins-light";
+    transition:all 0.6s;
+}
+#checkbox-term{
+  position:absolute;
+  margin-right:6px;
+  margin-top:2px;
+  margin-bottom:0px;
+  border-radius: 4px;
+  appearance: none;
+  outline: 0;
+  cursor: pointer;
+  border:1px solid #5268F4;
+  width:14px;
+  height:14px;
+  transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1);
+}
+#checkbox-term::before{
+        position: absolute;
+        content: '';
+        display: block;
+        top: 2px;
+        left: 7px;
+        width: 8px;
+        height: 14px;
+        border-style: solid;
+        border-color:red;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+        opacity: 0;
+}
+#checkbox-term::checked ~ label::before {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+#checkbox-term:checked{
+    color:white;
+    border-color:transparent;
+    background:#5268F4;
+}
+#term-txt{
+    margin-left:23px;
+}
+#content-btn-submit:hover{
+ background-color:white;
+ color:#5268F4;
+}
+#content-logo{
+    margin-left:23px;
+    margin-top:42px;
+    position:absolute;
+}
+#content-msg-bottom{
+    position:absolute;
+    color:white;
+    margin-left:22px;
+    top:83%;
+    font-family:"poppins-light";
+    font-size:12px;
+
+}
+#pattern-bg{
+    width:450px;
+    margin-right:0;
+    height:400px;
+    position:absolute;
+    left:34%;
+    margin-left:2px;
+}
+#ils-content{
+    position:absolute;
+    z-index:2px;
+    left:53%;
+    top:41%;
+    width:310px;
+}
+#login-already{
+    color:rgba(255,255,255,.1);
+    cursor: pointer;
+    transition:all 0.6s;
+}
+#login-already:hover{
+    color:#6c5ce7;
+    cursor: pointer;
+}
+#SignIn-Area{
+    display:none;
+}

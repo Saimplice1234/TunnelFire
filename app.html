@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tunnelfire</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="./assets/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="./script/notyf/notyf.min.css">
+</head>
+<body >
+    <nav>
+        <div id="section-btn-window">
+            <div id="section-drag-window"></div>
+          <span id="minimize" ><center><i class="far fa-window-minimize" onclick="winmin()"></i></center></span>
+          <span id="maximize" ><center><i class="fas fa-times" onclick="winclose()"></i></center></span>
+        </div>
+    </nav>
+<main id="app">
+    <section id="content">
+           <div id="content-header">
+               <img src="./assets/logo.svg" width="23" height="23" id="content-logo"/>
+               <p id="content-header-tlt-1">Join 25 millions user over the world and<br>stay connected with Tunnelfire</p>
+               <p id="content-header-tlt-2">Use our connected system and use our first<br>functionality the auth's user.</p>
+           </div>
+           <section id="SignUp-Area">
+           <div id="content-form">
+             <form onsubmit="return false;">
+                 <input type="text" placeholder="Username" id="content-form-username" required/>
+                 <input type="email" placeholder="Email" id="content-form-email" required//>
+                 <input type="password" placeholder="............" id="content-form-pass" required//>
+                 <span id="term"><input type="checkbox" id="checkbox-term" required/><span id="term-txt">Accept confidentiality.<span style="color:#7055F2;"> Terms of use</span></span></span>
+                 <button id="content-btn-submit" onclick="AuthUserSignUp()">Sign Up</button>
+             </form>
+            <span id="content-msg-bottom">Already menmber ? <span id="login-already" onclick="showSignIn()">Login</span></span>
+           </div>
+        </section>
+        <section id="SignIn-Area">
+            <div id="content-form-2">
+              <form onsubmit="return false;">
+                  <input type="email" placeholder="Email" id="content-form-email" required//>
+                  <input type="password" placeholder="............" id="content-form-pass" required//>
+                  <span id="term"><input type="checkbox" id="checkbox-term" required/><span id="term-txt">Accept confidentiality.<span style="color:#7055F2;"> Terms of use</span></span></span>
+                  <button id="content-btn-submit" onclick="AuthUserSignIn()">Sign In</button>
+              </form>
+             <span id="content-msg-bottom">Have an account? <span id="login-already" onclick="showSignUp()">SignIn</span></span>
+            </div>
+         </section>
+    </section>
+        <img src="./assets/Pattern.svg" id="pattern-bg" height="800"/>
+        <img src="./assets/Robotics-pana.svg"  id="ils-content"/>
+</main>
+    <script src="./script/notyf/notyf.min.js"></script>
+    <script src="./script/jquery-3.6.0.min.js"></script>
+    <script src="./script/script.js"></script>
+
+</body>
+</html>
