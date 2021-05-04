@@ -26,24 +26,24 @@
            <section id="SignUp-Area">
            <div id="content-form">
              <form onsubmit="return false;">
-                 <input type="text" placeholder="Username" id="content-form-username" required/>
-                 <input type="email" placeholder="Email" id="content-form-email" required//>
-                 <input type="password" placeholder="............" id="content-form-pass" required//>
-                 <span id="term"><input type="checkbox" id="checkbox-term" required/><span id="term-txt">Accept confidentiality.<span style="color:#7055F2;"> Terms of use</span></span></span>
+                 <input type="text" placeholder="Username" id="content-form-username"/>
+                 <input type="email" placeholder="Email" id="content-form-email"/>
+                 <input type="password" placeholder="............" id="content-form-pass" />
+                 <span id="term"><input type="checkbox" id="checkbox-term"/><span id="term-txt">Accept confidentiality.<span style="color:#7055F2;"> Terms of use</span></span></span>
                  <button id="content-btn-submit" onclick="AuthUserSignUp()">Sign Up</button>
              </form>
-            <span id="content-msg-bottom">Already menmber ? <span id="login-already" onclick="showSignIn()">Login</span></span>
+            <span id="content-msg-bottom">Already menmber ? <span id="login-already" onclick="showSignIn()">Sign Up</span></span>
            </div>
         </section>
         <section id="SignIn-Area">
             <div id="content-form-2">
               <form onsubmit="return false;">
-                  <input type="email" placeholder="Email" id="content-form-email" required//>
-                  <input type="password" placeholder="............" id="content-form-pass" required//>
-                  <span id="term"><input type="checkbox" id="checkbox-term" required/><span id="term-txt">Accept confidentiality.<span style="color:#7055F2;"> Terms of use</span></span></span>
+                  <input type="email" placeholder="Email" id="content-form-email-2" />
+                  <input type="password" placeholder="............" id="content-form-pass-2"/>
+                  <span id="term"><input type="checkbox" id="checkbox-term-2"/><span id="term-txt">By sign up you accept <span style="color:#7055F2;">terms of use</span></span></span>
                   <button id="content-btn-submit" onclick="AuthUserSignIn()">Sign In</button>
               </form>
-             <span id="content-msg-bottom">Have an account? <span id="login-already" onclick="showSignUp()">SignIn</span></span>
+             <span id="content-msg-bottom">Have an account? <span id="login-already" onclick="showSignUp()">Sign In</span></span>
             </div>
          </section>
     </section>

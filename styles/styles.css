@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
 }
+
 #app{
     display:none;
 }
@@ -15,10 +16,11 @@ nav{
     width:90%;
     -webkit-app-region:drag;
 }
+
 body{
     background-color:#17191C;
     overflow-y: hidden; /* Hide vertical scrollbar */
-  overflow-x: hidden; 
+    overflow-x: hidden; 
 
 }
 html { border-radius: 60px; }
@@ -172,11 +174,28 @@ html { border-radius: 60px; }
 
     
 }
+
 #content-form-username:focus,#content-form-email:focus,#content-form-pass:focus{
     border:1px solid #5268F4;
     outline: none !important;
 }
 #content-form-email{
+    border:none;
+    background-color:transparent;
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:4px;
+    height:40px;
+    position:absolute;
+    margin-left:22px;
+    padding-left:10px;
+    margin-top:60px;
+    color:white;
+    width:260px;
+    font-family:"poppins-light";
+    
+
+}
+#content-form-email-2{
     border:none;
     background-color:transparent;
     border:1px solid rgba(255,255,255,.1);
@@ -204,9 +223,21 @@ html { border-radius: 60px; }
     margin-top:120px;
     color:white;
     width:260px;
-    font-family:"poppins-light";
-
-    
+    font-family:"poppins-light";  
+}
+#content-form-pass-2{
+    border:none;
+    background-color:transparent;
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:4px;
+    height:40px;
+    position:absolute;
+    margin-left:22px;
+    padding-left:10px;
+    margin-top:120px;
+    color:white;
+    width:260px;
+    font-family:"poppins-light";  
 }
 #term{
     position:absolute;
@@ -269,6 +300,43 @@ html { border-radius: 60px; }
     border-color:transparent;
     background:#5268F4;
 }
+#checkbox-term-2{
+    position:absolute;
+    margin-right:6px;
+    margin-top:2px;
+    margin-bottom:0px;
+    border-radius: 4px;
+    appearance: none;
+    outline: 0;
+    cursor: pointer;
+    border:1px solid #5268F4;
+    width:14px;
+    height:14px;
+    transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1);
+  }
+  #checkbox-term-2::before{
+          position: absolute;
+          content: '';
+          display: block;
+          top: 2px;
+          left: 7px;
+          width: 8px;
+          height: 14px;
+          border-style: solid;
+          border-color:red;
+          border-width: 0 2px 2px 0;
+          transform: rotate(45deg);
+          opacity: 0;
+  }
+  #checkbox-term-2::checked ~ label::before {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  #checkbox-term-2:checked{
+      color:white;
+      border-color:transparent;
+      background:#5268F4;
+  }
 #term-txt{
     margin-left:23px;
 }
